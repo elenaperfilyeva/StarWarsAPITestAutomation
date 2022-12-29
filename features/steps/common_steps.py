@@ -1,10 +1,13 @@
 from behave import *
 import requests
 
+from utilities.configurations import *
+from utilities.resources import *
+
 
 @given(u'Get to "/people" url')
 def step_impl(context):
-    context.url = "https://swapi.dev/api/people/"
+    context.url = get_config()['API']['endpoint'] + ApiResources.PEOPLE
     context.response = requests.get(context.url)
 
 

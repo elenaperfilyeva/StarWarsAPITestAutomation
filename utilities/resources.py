@@ -1,3 +1,0 @@
-
-class ApiResources:
-    PEOPLE = '/people'

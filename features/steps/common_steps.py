@@ -2,7 +2,6 @@ from behave import *
 import requests
 
 from utilities.configurations import *
-from utilities.resources import *
 
 
 @given(u'Get to "{url}" url')
